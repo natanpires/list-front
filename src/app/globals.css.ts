@@ -1,3 +1,7 @@
+import { createGlobalStyle } from 'styled-components';
+
+export default createGlobalStyle`
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -104,4 +108,4 @@ a {
   html {
     color-scheme: dark;
   }
-}
+}`;

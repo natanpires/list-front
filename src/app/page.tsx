@@ -1,8 +1,10 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
+import Image from 'next/image';
+import { Inter } from 'next/font/google';
+import styles from './page.module.css';
+import Counter from '@/components/counter';
+import Pokemon from '@/components/pokemon';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
@@ -86,6 +88,8 @@ export default function Home() {
           </p>
         </a>
       </div>
+      <Counter />
+      <Pokemon />
     </main>
-  )
+  );
 }
