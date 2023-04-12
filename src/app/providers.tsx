@@ -1,14 +1,14 @@
 'use client';
 
 import { PropsWithChildren } from 'react';
-import { ReduxProvider } from './redux-provider';
+import ReduxRegistry from '@/lib/redux';
 import GlobalsCss from '@/app/globals.css';
 
 export function Providers({ children }: PropsWithChildren) {
   return (
-    <ReduxProvider>
+    <ReduxRegistry>
       <GlobalsCss />
       {children}
-    </ReduxProvider>
+    </ReduxRegistry>
   );
 }

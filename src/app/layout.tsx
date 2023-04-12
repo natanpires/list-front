@@ -1,4 +1,4 @@
-import StyledComponentRegistry from '@/lib/registry';
+import StyledComponentRegistry from '@/lib/styled';
 import { Providers } from './providers';
 export const metadata = {
   title: 'Create Next App',
