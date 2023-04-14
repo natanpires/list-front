@@ -1,10 +1,10 @@
 'use client';
 
-import { increment, decrement } from '@/redux/features/counter/counterSlice';
-import type { RootState } from '@/redux/store';
+import { increment, decrement } from '@redux/features/counter/counterSlice';
+import type { RootState } from '@redux/store';
 import { useDispatch, useSelector } from 'react-redux';
 
-const Counter = () => {
+const Counter: React.FC = () => {
   const count = useSelector((state: RootState) => state.counter.value);
   const dispatch = useDispatch();
 
@@ -29,4 +29,4 @@ const Counter = () => {
   );
 };
 
-export default Counter;
+export { Counter };

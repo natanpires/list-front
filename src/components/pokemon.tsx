@@ -1,9 +1,9 @@
 'use client';
 
-import { useGetPokemonByNameQuery } from '@/redux/services/pokemon';
+import { useGetPokemonByNameQuery } from '@redux/services/pokemon';
 import Image from 'next/image';
 
-const Pokemon = () => {
+const Pokemon: React.FC = () => {
   // Using a query hook automatically fetches data and returns query values
   const { data, error, isLoading } = useGetPokemonByNameQuery('pikachu');
   // Individual hooks are also accessible under the generated endpoints:
@@ -31,4 +31,4 @@ const Pokemon = () => {
   );
 };
 
-export default Pokemon;
+export { Pokemon };

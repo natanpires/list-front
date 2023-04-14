@@ -3,6 +3,6 @@
 import { sketchCss } from '@/styles/sketch';
 import styled from 'styled-components';
 
-export const Button = styled.button`
+export const Anchor = styled.a`
   ${sketchCss}
 `;
