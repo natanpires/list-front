@@ -1,11 +1,18 @@
 'use client';
 
-import React from 'react';
+import React, { forwardRef } from 'react';
 import * as S from './button.styled';
-import { ButtonProps } from './button.type';
 
-const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
-  return <S.Button {...props}>{children}</S.Button>;
-};
+const Button = forwardRef<
+  HTMLButtonElement,
+  React.ButtonHTMLAttributes<HTMLButtonElement>
+>(({ children, ...props }, ref) => {
+  return (
+    <S.Button ref={ref} {...props}>
+      {children}
+    </S.Button>
+  );
+});
 
-export { Button };
+Button.displayName = 'Button';
+export default Button;

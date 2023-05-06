@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import styles from './page.module.css';
-import { Anchor } from '@components/index';
+import Anchor from '@/components/anchor/anchor.component';
+import Counter from '@/components/counter';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -46,10 +47,11 @@ export default function Home() {
         </div>
       </div>
 
+      <Counter />
+
       <div className={styles.grid}>
         <Anchor
           href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -63,7 +65,6 @@ export default function Home() {
 
         <Anchor
           href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -75,7 +76,6 @@ export default function Home() {
 
         <Anchor
           href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
         >

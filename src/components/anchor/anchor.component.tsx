@@ -2,10 +2,12 @@
 
 import React from 'react';
 import * as S from './anchor.styled';
-import { AnchorProps } from './anchor.type';
 
-const Anchor: React.FC<AnchorProps> = ({ children, ...props }) => {
+const Anchor: React.FC<React.AnchorHTMLAttributes<HTMLAnchorElement>> = ({
+  children,
+  ...props
+}) => {
   return <S.Anchor {...props}>{children}</S.Anchor>;
 };
 
-export { Anchor };
+export default Anchor;

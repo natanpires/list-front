@@ -4,6 +4,7 @@ export default createGlobalStyle`
 
 :root {
   --max-width: 1100px;
+  --padding: 6rem;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
